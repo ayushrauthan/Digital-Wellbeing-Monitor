@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database file
+data/wellness.db
+
+# Log files
+logs/*.log
+
+# IDE / Editor specific files
+.idea/
+.vscode/
