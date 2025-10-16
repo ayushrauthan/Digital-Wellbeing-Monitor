@@ -1,0 +1,75 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* A more standard, basic font */
+    background-color: #fff; /* A clean white background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333; /* A simple dark grey navbar */
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 3px solid #555; /* Simple border for a bit of detail */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content */
+.main-content {
+    padding: 2rem 0;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #f9f9f9; /* A very light grey for the cards */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Replaced shadow with a simple border */
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333; /* Use the default text color for simplicity */
+}

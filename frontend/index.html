@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - WellnessWatch</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Digital Wellbeing Monitor </h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Insights</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <h2>Dashboard Overview</h2>
+            <p>Welcome to your digital wellbeing dashboard. Real-time data will be displayed here.</p>
+
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Current Activity</h3>
+                    <p id="current-app">Fetching...</p>
+                </div>
+                <div class="card">
+                    <h3>Today's Active Time</h3>
+                    <p id="active-time">0h 0m</p>
+                </div>
+                <div class="card">
+                    <h3>Productivity Score</h3>
+                    <p id="prod-score">--</p>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 2rem;">
+                <h3>Today's Time by Category</h3>
+                <canvas id="categoryChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        
+    </footer>
+    <script src="/js/api.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/charts.js"></script>
+</body>
+</html>
